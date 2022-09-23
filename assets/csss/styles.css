@@ -1,0 +1,76 @@
+.Body{
+    background-color: #FFFFFF;
+}
+
+.header{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-1{
+    font-size: 15px;
+}
+
+.text-2{
+    font-size: 15px;
+}
+
+.Color-1{
+    background-color: #009E60;
+    color: #009E60;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.Color-2{
+    background-color: #FCD116;
+    color: #FCD116;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.Color-3{
+    background-color: #3A75C4;
+    color: #3A75C4;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.container{
+    background-color: #FFFFFF;
+}
+
+.title-onu{
+    padding: 25px;
+    display: flex;
+}
+
+.Texto-e-info{
+    font-size: 18px;
+}
+
+.Titulo{
+    text-align: center;
+}
+
+.hr{
+    margin: 25px;
+}
+
+#img1{
+    float: left;
+}
+
+#img2{
+    float: right;
+}
+
+.Topicos{
+    text-align: center;
+}
