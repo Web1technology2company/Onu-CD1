@@ -1,76 +1,111 @@
-.Body{
-    background-color: #FFFFFF;
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.header{
-    background-color: #F2F2F2;
+.nav{
+    position: fixed;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    text-align: center;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.nav.active{
+    background: #fff;
+    padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active .menu a,
+.nav.active .menu-btn i{
+    color: #000;
+}
+
+.nav.active a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+}
+
+.menu-btn{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    .menu-btn{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background: #334087 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5 ease;
+        transform: translatex(-100%);
+    }
+    .menu li{
+        margin: 15px 0 ;
+    }
+
+    .menu.active{
+        transform: translatex(0);
+    }
+}
+
+.scrol{
+    height: 100px;
+    padding-top: 3rem;
 }
 
 .text-1{
-    font-size: 15px;
+    text-align: center;
+    height: 50px;
 }
 
 .text-2{
-    font-size: 15px;
-}
-
-.Color-1{
-    background-color: #009E60;
-    color: #009E60;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-.Color-2{
-    background-color: #FCD116;
-    color: #FCD116;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-.Color-3{
-    background-color: #3A75C4;
-    color: #3A75C4;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-.container{
-    background-color: #FFFFFF;
-}
-
-.title-onu{
-    padding: 25px;
-    display: flex;
-}
-
-.Texto-e-info{
+    padding: 10px;
     font-size: 18px;
-}
-
-.Titulo{
-    text-align: center;
-}
-
-.hr{
-    margin: 25px;
-}
-
-#img1{
-    float: left;
-}
-
-#img2{
-    float: right;
-}
-
-.Topicos{
-    text-align: center;
 }
